@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations With Node.js API</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="title text-center my-3">
+        <h1>CRUD Operations With Node.js API</h1>
+    </div>
+    <div class="container border p-3 my-5 rounded shadow ">
+        <label for="productName">Product Name</label>
+        <input class="form-control my-3" type="text" id="productName">
+        <label for="productPrice">Product Price</label>
+        <input class="form-control my-3" type="number" id="productPrice">
+        <label for="productDesc">Product Description</label>
+        <textarea class="form-control my-3" name="" id="productDesc" cols="30" rows="10"></textarea>
+        <button onclick="getInputValue()" id="add" class="btn btn-outline-primary">Add Product</button>
+        <button id="update" class="btn btn-outline-success">Update Product</button>
+    </div>
+    <div class="container my-5">
+        <table class="table text-center table-hover text-white">
+            <thead>
+
+                <th>index</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </thead>
+            <tbody id="tbody">
+            
+
+      
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
